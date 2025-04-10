@@ -1,11 +1,17 @@
 package kr.hhplus.be.server.points.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 @Getter
 @Setter
+@Entity
 public class PointsEntity {
+    @Id
     private Long id;
     private Long userId;
     private Integer points;

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/points")
 @RestController
 public class PointsController {
-
     private final PointsService pointsService;
 
     @Operation(summary = "유저 포인트 충전 api")
